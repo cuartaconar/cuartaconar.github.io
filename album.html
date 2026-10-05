@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: blob:; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none';">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Album - Familia Cuarta</title>
+<link rel="stylesheet" href="estilos/style.css">
+<link rel="stylesheet" href="estilos/style5.css">
+</head>
+<body class="pagina-album">
+<a href="familia.html" class="boton-album boton-volver">⬅ VOLVER</a>
+<div class="estrellas" id="estrellasAlbum"></div>
+<div class="brillo-fondo"></div>
+
+<h1 class="titulo-album">ALBUM FAMILIA CUARTA</h1>
+<p class="subtitulo-album">Nestra Historia 📸✨</p>
+
+<div class="controles-album" id="controlesAlbum">
+  <button type="button" id="btnEditarAlbum" class="btn-admin">🔐 EDITAR ÁLBUM</button>
+  <button type="button" id="btnBloquearAlbum" class="btn-admin btn-admin-secundario" hidden>🔒 BLOQUEAR</button>
+  <label for="inputFotos" class="btn-agregar">➕ AGREGAR IMÁGENES</label>
+  <input type="file" id="inputFotos" accept="image/*" multiple hidden>
+  <button id="btnLimpiar" class="btn-limpiar">🗑️ Borrar Todo</button>
+</div>
+
+<div class="galeria-album" id="galeriaAlbum">
+  <div class="vacio-album"> 📸</div>
+</div>
+
+<!-- Modal -->
+<div class="modal-imagen" id="modalAlbum">
+  <div class="modal-fondo"></div>
+  <div class="modal-contenido">
+    <button class="modal-cerrar">✕</button>
+    <div class="foto-grande" id="fotoGrandeAlbum"></div>
+  </div>
+</div>
+
+<script src="movimientos/seguridad.js"></script>
+<script src="movimientos/album.js"></script>
+</body>
+</html>
